@@ -1,8 +1,5 @@
-declare namespace EpubParser {
-  namespace EpubParser {
-
-  }
-}
+// Type definitions for epub-parser
+// Project: https://github.com/Vaporbook/epub-parser
 
 declare module 'epub-parser' {
 
