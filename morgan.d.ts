@@ -1,10 +1,17 @@
+declare namespace Express {
+  namespace Morgan {
+
+  }
+}
+
 declare module 'morgan' {
   import * as express from 'express';
 
-  function morgan(environment: string): express.RequestHandler
-
-  namespace morgan {
+  interface Morgan {
+    (environment?: string): express.RequestHandler
   }
 
-  export = morgan
+  var morgan: Morgan;
+
+  export = multer;
 }
