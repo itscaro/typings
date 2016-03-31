@@ -1,7 +1,16 @@
-declare module 'epubParser' {
-  interface epubParser {
+declare namespace EpubParser {
+  namespace EpubParser {
+
+  }
+}
+
+declare module 'epub-parser' {
+
+  interface EpubParser {
     open(filePath: string, callback: Function): void
   }
 
-  export = epubParser
+  var epubParser: EpubParser;
+
+  export = epubParser;
 }
